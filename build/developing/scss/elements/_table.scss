@@ -1,0 +1,107 @@
+// Remove most spacing between table cells.
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    empty-cells: show;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+table caption {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-midgray;
+}
+
+th {
+    text-align: left;
+    font-weight: 700;
+    vertical-align: bottom;
+}
+
+th,
+td {
+    padding: 1rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+td {
+    vertical-align: top;
+}
+
+tr.align-middle td,
+td.align-middle {
+    vertical-align: middle;
+}
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+tfoot th,
+tfoot td {
+    color: rgba(49, 52, 57, 0.5);
+}
+
+table.bordered td,
+table.bordered th {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+table.striped tr:nth-child(odd) td {
+    background: $color-aluminum;
+}
+
+table.bordered td:first-child,
+table.bordered th:first-child,
+table.striped td:first-child,
+table.striped th:first-child {
+    padding-left: 1rem;
+}
+
+table.bordered td:last-child,
+table.bordered th:last-child,
+table.striped td:last-child,
+table.striped th:last-child {
+    padding-right: 1rem;
+}
+
+table.unstyled td,
+table.unstyled th {
+    border: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    table {width:100%;}
+    thead {display: none;}
+    tr:nth-of-type(2n) {background-color: inherit;}
+    tbody td, tfoot td {display: block;  text-align:center;}
+    tbody td:before , tfoot td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+        padding: 1rem 1rem .0rem;
+        position: relative;
+        top: -17px;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}

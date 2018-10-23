@@ -1,0 +1,94 @@
+// Clear margin for line breaks
+br {
+	margin-bottom: 0;
+}
+
+small,
+sub,
+sup{
+	line-height: 1;
+}
+
+em,
+i{
+	font-style: italic;
+}
+
+strong,
+var,
+b{
+	font-weight: bold;
+}
+
+q{
+	&:before{
+		content: "'";
+	}
+
+	&:after{
+		content: "'";
+	}
+
+	& > q{
+		font-style: italic;
+	}
+}
+
+dfn,
+abbr{
+	border-bottom: .1rem dotted $color-midgray;
+	cursor: default;
+}
+
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* Paragraph
+========================================================================== */
+
+
+// Attention grabber
+.attention-grabber {
+	@include font-size(1.2);
+}
+
+@media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+	$leading: $leading-desktop;
+	$leading-rem: $leading-rem-desktop;
+
+
+	@if $paragraph-indent == true {
+
+		p + p,
+		.floatLeft + p,
+		.floatRight + p {
+			@include margin-top(-1);
+		}
+
+	}
+
+}
+
+
+
+
+
+// Fix letter spacing for uppercase
+.uppercase {
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}

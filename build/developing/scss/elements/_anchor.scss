@@ -1,0 +1,30 @@
+/* Links    =========     */
+
+a {
+	background: transparent;
+	color: $link;
+	transition: all .3s;
+	display: inline-block;
+	&:active, &:hover {
+		outline: 0;
+	}
+	&:hover {
+		color: $link--hover;
+	}
+	&:not(.button):visited {
+		color: $link--visited;
+	}
+	&:not(.button):visited:hover {
+		color: rgba($link--visited, 80);
+	}
+	&:active {
+		color: $link--active;
+	}
+	.icon{
+		position: relative;
+		margin: 0 6px;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+	}
+}

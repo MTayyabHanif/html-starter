@@ -1,0 +1,2744 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Set the title of your site here -->
+	<title> CSS & JS Framework </title>
+
+	<meta name="author" content="Tayab Hanif">
+	<meta name="description" content="description">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Link to your stylesheet here -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Favicons and Touch Device Icons -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="touch-icon-iphone-precomposed.png">
+	<link rel="apple-touch-icon" sizes="72x72"   href="touch-icon-ipad-precomposed.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone-retina-precomposed.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-retina-precomposed.png">
+
+	 <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<section>
+		<div class="demo-grid">
+			<div class="wrap container-fluid">
+				<h1 class="text-center">CSS & JS Framework</h1>
+				<h2 class="text-center">For professional developers and designers alike</h2>
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Grid</h2></a>
+				<div class="demo-heading display-none grid">
+					<h3><span>#</span> Basic</h3>
+					<p class="small full-width ">Grid system is based on Flex-box fluid and there are 12 grids.</p>
+					<div class="row center-xs center-sm center-md center-lg">
+						<div class="col-lg-1">
+							<div class="box">col-lg-1</div>
+						</div>
+						<div class="col-lg-11">
+							<div class="box">col-lg-11</div>
+						</div>
+
+						<div class="col-lg-2">
+							<div class="box">col-lg-2</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="box">col-lg-10</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="box">col-lg-3</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="box">col-lg-9</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="box">col-lg-4</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="box">col-lg-8</div>
+						</div>
+
+						<div class="col-lg-5">
+							<div class="box">col-lg-5</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="box">col-lg-7</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="box">col-lg-6</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="box">col-lg-6</div>
+						</div>
+
+						<div class="col-lg-7">
+							<div class="box">col-lg-7</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="box">col-lg-5</div>
+						</div>
+
+						<div class="col-lg-8">
+							<div class="box">col-lg-8</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="box">col-lg-4</div>
+						</div>
+
+						<div class="col-lg-9">
+							<div class="box">col-lg-9</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="box">col-lg-3</div>
+						</div>
+
+						<div class="col-lg-10">
+							<div class="box">col-lg-10</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="box">col-lg-2</div>
+						</div>
+
+						<div class="col-lg-11">
+							<div class="box">col-lg-11</div>
+						</div>
+						<div class="col-lg-1">
+							<div class="box">col-lg-1</div>
+						</div>
+					</div>
+					<h3><span>#</span> With Gutter</h3>
+					<p class="small full-width ">You can add gutter in rows by using <code>with-gutter</code> class. This will add padding 0.6rem on both sides of grid.</p>
+					<div class="example">
+						<div class="row with-gutter center-xs center-sm center-md center-lg">
+							<div class="col-lg-3">
+								<div class="box">col-lg-3</div>
+							</div>
+							<div class="col-lg-9">
+								<div class="box">col-lg-9</div>
+							</div>
+
+							<div class="col-lg-2">
+								<div class="box">col-lg-2</div>
+							</div>
+							<div class="col-lg-10">
+								<div class="box">col-lg-10</div>
+							</div>
+						</div>
+					</div>
+					<h3><span>#</span> With offsets</h3>
+					<p class="small full-width ">You can add offset in rows by using <code>off-{col_name}-{offset_number}</code> class.</p>
+					<div class="example">
+						<div class="row with-gutter">
+							<div class="col-lg-3">
+								<div class="box">col-lg-3</div>
+							</div>
+							<div class="off-lg-2 col-lg-7">
+								<div class="box">col-lg-7 with off-lg-2</div>
+							</div>
+
+							<div class="col-lg-2">
+								<div class="box">col-lg-2</div>
+							</div>
+							<div class="col-lg-4 off-lg-6">
+								<div class="box">col-lg-4  with off-lg-6</div>
+							</div>
+						</div>
+					</div>
+					<h3><span>#</span> Nested Grids</h3>
+					<p class="full-width">Nest grids inside grids inside grids.</p>
+					<div class="example">
+						<div class="row">
+							<div class="col-xs-7">
+								<div class="box box-container">
+									<div class="row">
+										<div class="col-xs-9">
+											<div class="box-first box-container">
+												<div class="row">
+													<div class="col-xs-4">
+														<div class="box-nested">
+														</div>
+													</div>
+													<div class="col-xs-8">
+														<div class="box-nested">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-3">
+											<div class="box-first box-container">
+												<div class="row">
+													<div class="col-xs">
+														<div class="box-nested">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-5">
+								<div class="box box-container">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="box-first box-container">
+												<div class="row">
+													<div class="col-xs-6">
+														<div class="box-nested">
+														</div>
+													</div>
+													<div class="col-xs-6">
+														<div class="box-nested">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3><span>#</span> Alignment</h3>
+					<p class="full-width">Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
+					<div class="example">
+						<p class="full-width"><code>.start-{col_name}</code></p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row start-xs">
+										<div class="col-xs-6">
+											<div class="box-nested">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="example">
+						<p class="full-width"><code>.center-{col_name}</code></p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row center-xs">
+										<div class="col-xs-6">
+											<div class="box-nested">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="example">
+						<p class="full-width"><code>.end-{col_name}</code></p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row end-xs">
+										<div class="col-xs-6">
+											<div class="box-nested">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example">
+						<p class="full-width">Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.</p>
+						<p class="full-width">Classes used<code>center-xs end-sm start-lg</code></p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row center-xs end-sm start-lg">
+										<div class="col-xs-6">
+											<div class="box-nested">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.top-{col_name}</code>
+						</p>
+						<div class="row top-xs">
+							<div class="col-xs-6">
+								<div class="box-large">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="box">
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.middle-{col_name}</code>
+						</p>
+						<div class="row middle-xs">
+							<div class="col-xs-6">
+								<div class="box-large">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="box">
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.bottom-{col_name}</code>
+						</p>
+						<div class="row bottom-xs">
+							<div class="col-xs-6">
+								<div class="box-large">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="box">
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<h3><span>#</span> Distribution</h3>
+					<p class="small full-width ">Add classes to distribute the contents of a row or column.</p>
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.around-{col_name}</code>
+						</p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row around-xs">
+										<div class="col-xs-2">
+											<div class="box-nested">
+											</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">
+											</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.between-{col_name}</code>
+						</p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row between-xs">
+										<div class="col-xs-2">
+											<div class="box-nested">
+											</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">
+											</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3><span>#</span> Reordering</h3>
+					<p class="small full-width ">Add classes to reorder columns.</p>
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.first-{col_name}</code>
+						</p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row">
+										<div class="col-xs-2">
+											<div class="box-first">1</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">2</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">3</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">4</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">5</div>
+										</div>
+										<div class="col-xs-2 first-xs">
+											<div class="box-nested">6</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example">
+						<p class="full-width">
+							<code>.last-{col_name}</code>
+						</p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row">
+										<div class="col-xs-2 last-xs">
+											<div class="box-nested">1</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">2</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">3</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">4</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">5</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-first">6</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="example">
+						<p class="full-width">
+							Use this with row as <code>row reverse-{col_name}</code>
+						</p>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box box-container">
+									<div class="row reverse">
+										<div class="col-xs-2">
+											<div class="box-nested">1</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">2</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">3</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">4</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">5</div>
+										</div>
+										<div class="col-xs-2">
+											<div class="box-nested">6</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!--  Ending GRID -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Typography</h2></a>
+				<div class="demo-heading display-none typography">
+					<h3><span>#</span> Headings 1-6</h3>
+					<div class="example">
+						<h1>Headline 1</h1>
+						<h2>Headline 2</h2>
+						<h3>Headline 3</h3>
+						<h4>Headline 4</h4>
+						<h5>Headline 5</h5>
+						<h6>Headline 6</h6>
+					</div>
+					<h3><span>#</span> Paragraphs</h3>
+					<p class="small full-width ">The base pragraph has an ideal ratio of font size and baseline. This text is easy to read in most cases.</p>
+					<div class="example">
+						<pre class="dont-code text-center"><code class="html">&lt;p&gt;...&lt;/p&gt;</code></pre>
+						<p>
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+					</div>
+					<p class="small full-width ">For best UI practices the paragraphs are maintained in specific width i.e <b>38rem - default</b>.  But if you want to have full width, you can get it by adding <code>full-width</code> class to paragraph</p>
+					<div class="example">
+						<pre class="dont-code"><code class="html">&lt;p class="full-width"&gt;...&lt;/p&gt;</code></pre>
+						<p class="full-width">
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+					</div>
+					<p class="small full-width ">
+						In special cases, you can use classes specifically for paragraphs which increase or decrease the text size. It is useful for building a variety of websites and UI, when you need to make a lead text or signatures with a small font size .
+					</p>
+					<div class="example">
+						<p>These classes are:<br>
+							<code>huge</code><br>
+							<code>large</code><br>
+							<code>medium (default)</code> or <code>base</code><br>
+							<code>small</code><br>
+							<code>tiny</code>
+						</p>
+						<hr>
+						<pre class="dont-code text-center"><code class="html">&lt;p class="huge"&gt;...&lt;/p&gt;</code></pre>
+						<p class="huge">This is using <code>huge</code>.
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+						<hr>
+						<pre class="dont-code text-center"><code class="html">&lt;p class="large"&gt;...&lt;/p&gt;</code></pre>
+						<p class="large">This is using <code>large</code>.
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+						<hr>
+						<pre class="dont-code text-center"><code class="html">&lt;p class="medium"&gt;...&lt;/p&gt;</code></pre>
+
+						<p class="medium">This is using <code>medium</code>.
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+						<hr>
+						<pre class="dont-code text-center"><code class="html">&lt;p class="small"&gt;...&lt;/p&gt;</code></pre>
+						<p class="small">This is using <code>small</code>.
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+						<hr>
+						<pre class="dont-code text-center"><code class="html">&lt;p class="tiny"&gt;...&lt;/p&gt;</code></pre>
+						<p class="tiny">This is using <code>tiny</code>.
+							Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						</p>
+					</div>
+					<h3><span>#</span> Blockquote</h3>
+					<p class="small full-width ">Quotes in the text stand out for contrast and added variety to the text. In the quotes you can mark text as a paragraph tag and without it.</p>
+					<div class="example">
+						<blockquote cite="http://example.com/facts">
+							<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.</p>
+						</blockquote>
+					</div>
+					<p class="small full-width ">Use <code>small </code> or <code>cite</code> tag for attribution. It's a prefer way for semantic code.</p>
+					<div class="example">
+						<blockquote cite="http://example.com/facts">
+							<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.</p>
+							<cite>—  Crazy Ass</cite>
+						</blockquote>
+					</div>
+					<h3><span>#</span> Pre-formatted</h3>
+					<p class="small full-width ">Pre-formatted text most often used to display code snippets or other text elements, for which you wish to preserve the exact formatting they've got.</p>
+					<div class="example">
+						<pre><code class="css">&lt;style&gt;
+	max-width: 100%;
+	postition: absolute;
+	top: 0;
+	height: 1px;
+	width: 100%;
+	background-color: #000;
+&lt;/style&gt; </code>	</pre>
+					</div>
+					<h3><span>#</span> Inline Elements</h3>
+					<p class="small full-width ">Some inline formatting elements. They all have their own semantic meaning, but you're free to use them just for their style.</p>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="table-example example">
+								<table>
+									<thead>
+										<tr>
+											<th  style="width: 10%;">Example</th>
+											<th>Tag</th>
+											<th style="width: 10%;">Example</th>
+											<th>Tag</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><abbr title="Cascading Style Sheets">CSS</abbr></td>
+											<td><code>&lt;abbr&gt;</code></td>
+											<td><cite style="margin-top: 0">Cite</cite></td>
+											<td><code>&lt;cite&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>Code</code></td>
+											<td><code>&lt;code&gt;</code></td>
+											<td><samp>Sample</samp></td>
+											<td><code>&lt;samp&gt;</code></td>
+										</tr>
+										<tr>
+											<td><var>Variable</var></td>
+											<td><code>&lt;var&gt;</code></td>
+											<td><mark>Mark</mark></td>
+											<td><code>&lt;mark&gt;</code></td>
+										</tr>
+										<tr>
+											<td><kbd>Shortcut</kbd></td>
+											<td><code>&lt;kbd&gt;</code></td>
+											<td><del>Deleted</del></td>
+											<td><code>&lt;del&gt;</code></td>
+										</tr>
+										<tr>
+											<td><i>Italic</i></td>
+											<td><code>&lt;i&gt;</code></td>
+											<td><em>Emphasis</em></td>
+											<td><code>&lt;em&gt;</code></td>
+										</tr>
+										<tr>
+											<td><strong>Highlighted</strong></td>
+											<td><code>&lt;strong&gt;</code></td>
+											<td><b>Bold</b></td>
+											<td><code>&lt;b&gt;</code></td>
+										</tr>
+										<tr>
+											<td>x<sup>superscript</sup></td>
+											<td><code>&lt;sup&gt;</code></td>
+											<td>x<sub>subscript</sub></td>
+											<td><code>&lt;sub&gt;</code></td>
+										</tr>
+										<tr>
+											<td><small>Small</small></td>
+											<td><code>&lt;small&gt;</code></td>
+											<td><ins>Inserted</ins></td>
+											<td><code>&lt;ins&gt;</code></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<h3><span>#</span> Typography modifiers</h3>
+					<p class="small full-width ">Modifiers - a set of helper classes for creating accents in the text and for the solution of useful tasks without writing CSS code, for example, the alignment of the text in the center.</p>
+					<p class="small full-width ">Modifiers can be applied to any tags as inline elements, links or block tags.</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="table-example example">
+								<table>
+									<thead>
+										<tr><th>Example</th>
+											<th>Modifier</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="width: 21%;"><span class="muted">Muted</span></td>
+											<td class="col-12"><code>.muted</code></td>
+										</tr>
+										<tr>
+											<td><a href="#" class="muted">Muted link</a></td>
+											<td><code>.muted</code></td>
+										</tr>
+										<tr>
+											<td><a href="#" class="black">Black link</a></td>
+											<td><code>.black</code></td>
+										</tr>
+										<tr>
+											<td><span class="highlight">Highlight</span></td>
+											<td><code>.highlight</code></td>
+										</tr>
+										<tr>
+											<td><span class="uppercase">uppercase</span></td>
+											<td><code>.uppercase</code></td>
+										</tr>
+										<tr>
+											<td><span class="lowercase">LOWERCASE</span></td>
+											<td><code>.lowercase</code></td>
+										</tr>
+										<tr>
+											<td><span class="italic">Italic</span></td>
+											<td><code>.italic</code></td>
+										</tr>
+										<tr>
+											<td><span class="nowrap">Nowrap</span></td>
+											<td><code>.nowrap</code></td>
+										</tr>
+										<tr>
+											<td><span class="nowrap">White spaces wrap</span></td>
+											<td><code>.white-wrap</code></td>
+										</tr>
+										<tr>
+											<td class="end">Remove margin bottom</td>
+											<td><code>.end</code></td>
+										</tr>
+										<tr>
+											<td><span class="highlight">Highlight</span></td>
+											<td><code>.highlight</code></td>
+										</tr>
+										<tr>
+											<td><span class="huge">Huge</span></td>
+											<td><code>.huge</code></td>
+										</tr>
+										<tr>
+											<td><span class="large">Large</span></td>
+											<td><code>.large</code></td>
+										</tr>
+										<tr>
+											<td><span class="medium">Medium</span></td>
+											<td><code>.medium</code></td>
+										</tr>
+										<tr>
+											<td><span class="small">Small</span></td>
+											<td><code>.small</code></td>
+										</tr>
+										<tr>
+											<td><span class="tiny">Tiny</span></td>
+											<td><code>.tiny</code></td>
+										</tr>
+										<tr>
+											<td class="text-left">Text left</td>
+											<td><code>.text-left</code></td>
+										</tr>
+										<tr>
+											<td class="text-center">Text center</td>
+											<td><code>.text-center</code></td>
+										</tr>
+										<tr>
+											<td class="text-right">Text right</td>
+											<td><code>.text-right</code></td>
+										</tr>
+										<tr>
+											<td class="text-justify">This text is just going to be justified but because it is aligned to left by default it'll stay there.</td>
+											<td><code>.text-justify</code></td>
+										</tr>
+										<tr>
+											<td class="text-center-justify">But with this modifier this text is just going to be justified but also it is aligned to centered. Awesome!</td>
+											<td><code>.text-center-justify</code></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<p class="small full-width">
+						<b>Font Weights:</b><br>
+						<code>.light</code> -
+						<span class="white-wrap light">		      Changes the type to be 300 weight</span><br>
+						<code>.normal</code> -
+						<span class="white-wrap normal">		Changes the type to be 400 weight</span><br>
+						<code>.semibold</code> -
+						<span class="white-wrap semibold">	     Changes the type to be 600 weight</span><br>
+						<code>.bold</code> -
+						<span class="white-wrap bold">			Changes the type to be 700 weight</span>
+					</p>
+
+					<h3><span>#</span> Figure</h3>
+					<p class="small full-width ">A figure tag features an image, a video or a code plus a caption. It is a good accessibility practice. It also helps serve responsive video to various devices when you wrap video into <code>.video-container</code> class.</p>
+					<div class="example">
+						<figure>
+							<img src="img/fish.jpg">
+							<figcaption>Orange Fish is about to fight with tiny lil snake! - Ocean</figcaption>
+						</figure>
+
+						<figure>
+							<div class="video-container">
+								<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/nywsA8wCCfY" frameborder="0" allowfullscreen=""></iframe> -->
+							</div>
+							<figcaption>Journey Through The Ice | National Geographic</figcaption>
+						</figure>
+						<p class="full-width">You can add video in figure by using this markup:</p>
+						<pre><code>&lt;figure&gt;
+	&lt;div class="video-container"&gt;
+		&lt;iframe&gt;...&lt;/iframe&gt;
+	&lt;/div&gt;
+	&lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+					</div>
+
+
+					<h3><span>#</span> Lists</h3>
+					<p class="small full-width ">Although you most likely will not ever need to do so, you can still nest as many list levels as you like.</p>
+					<div class="row with-gutter">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="example">
+								<ul>
+									<li>list item 1</li>
+									<li>list item 2
+										<ul>
+											<li>list item 2.1</li>
+											<li>list item 2.2
+												<ul>
+													<li>list item 2.2.1</li>
+													<li>list item 2.2.2</li>
+												</ul>
+											</li>
+											<li>list item 2.3</li>
+											<li>list item 2.4</li>
+										</ul>
+									</li>
+									<li>list item 3</li>
+									<li>list item 4</li>
+								</ul>
+								<pre><code>&lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="example">
+								<ol>
+									<li>list item 1</li>
+									<li>list item 2
+										<ol>
+											<li>list item 2.1</li>
+											<li>list item 2.2
+												<ol>
+													<li>list item 2.2.1</li>
+													<li>list item 2.2.2</li>
+												</ol>
+											</li>
+											<li>list item 2.3</li>
+											<li>list item 2.4</li>
+										</ol>
+									</li>
+									<li>list item 3</li>
+									<li>list item 4</li>
+								</ol>
+								<pre><code>&lt;ol&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+					<p class="full-width">To use unstyled list or want to remove default styles from lists use <code>.unstyled</code></p>
+					<div class="example">
+						<ul class="unstyled">
+							<li>list item 1</li>
+							<li>list item 2
+								<ul>
+									<li>list item 2.1</li>
+									<li>list item 2.2</li>
+								</ul>
+							</li>
+							<li>list item 3</li>
+							<li>list item 4</li>
+						</ul>
+								<pre><code class="html">&lt;ul class="unstyled"&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+					</div>
+					<h3><span>#</span> Definitions</h3>
+					<p class="small full-width ">From time to time, you may need to produce a list of definitions, and there's one nicely built-in. We love semantic things. </p>
+					<div class="example">
+						<dl>
+							<dt>USA</dt>
+							<dd>United States of America</dd>
+							<dt>RP</dt>
+							<dd>Roleplay</dd>
+							<dt>MG</dt>
+							<dd>Metagaming</dd>
+						</dl>
+					</div>
+				</div><!--  Ending TYPOGRAPHY -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Tables</h2></a>
+				<div class="demo-heading display-none tables">
+					<h3><span>#</span> Basic Table</h3>
+					<div class="table-example example">
+						<pre><code class="html">&lt;table&gt;...&lt;/table&gt;</code></pre>
+						<table>
+							<thead>
+								<tr>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jill</td>
+									<td>Smith</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>Eve</td>
+									<td>Jackson</td>
+									<td>94</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">Total points</td>
+									<td>223</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<h3><span>#</span> Bordered</h3>
+					<div class="example table-example">
+					<pre><code class="html">&lt;table class="bordered"&gt;...&lt;/table&gt;</code></pre>
+						<table class="bordered">
+							<thead>
+								<tr>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jill</td>
+									<td>Smith</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>Eve</td>
+									<td>Jackson</td>
+									<td>94</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">Total points</td>
+									<td>223</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<h3><span>#</span> Striped</h3>
+					<div class="example table-example">
+					<pre><code class="html">&lt;table class="striped"&gt;...&lt;/table&gt;</code></pre>
+						<table class="striped">
+							<thead>
+								<tr>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jill</td>
+									<td>Smith</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>Eve</td>
+									<td>Jackson</td>
+									<td>94</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">Total points</td>
+									<td>223</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<h3><span>#</span> Unstyled</h3>
+					<div class="example table-example">
+					<pre><code class="html">&lt;table class="unstyled"&gt;...&lt;/table&gt;</code></pre>
+						<table class="unstyled">
+							<thead>
+								<tr>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jill</td>
+									<td>Smith</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>Eve</td>
+									<td>Jackson</td>
+									<td>94</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">Total points</td>
+									<td>223</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<h3><span>#</span> Mixed</h3>
+					<div class="example table-example">
+					<pre><code class="html">&lt;table class="bordered striped"&gt;...&lt;/table&gt;</code></pre>
+						<table class="bordered striped">
+							<thead>
+								<tr>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-th="First Name">Jill</td>
+									<td data-th="Last Name">Smith</td>
+									<td data-th="Points">50</td>
+								</tr>
+								<tr>
+									<td data-th="First Name">Eve</td>
+									<td data-th="Last Name">Jackson</td>
+									<td data-th="Points">94</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">Total points</td>
+									<td>223</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div><!--  Ending Tables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Forms</h2></a>
+				<div class="demo-heading display-none forms">
+					<h3><span>#</span> Basic Form</h3>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<form method="post" action="" class="form" autocomplete="off">
+									<div class="form-item">
+										<label>Email</label>
+										<input type="email" name="email">
+									</div>
+									<div class="form-item">
+										<label>Country</label>
+										<select >
+											<option value="">---</option>
+											<option value="">------</option>
+											<option value="">---------</option>
+											<option value="">-------------</option>
+										</select>
+									</div>
+
+									<div class="form-item multiple-radios">
+										<label class="radio">
+											<input name="example" type="radio">
+											<span class="radio__label">I Lied</span>
+										</label>
+										<label class="radio">
+											<input name="example" type="radio">
+											<span class="radio__label">No, I didn't Lie</span>
+										</label>
+
+									</div>
+
+
+									<div class="form-item">
+										<textarea rows="6"></textarea>
+									</div>
+
+									<div class="form-item">
+										<label class="checkbox">
+											<input type="checkbox" />
+											<span class="checkbox__label">Remember me</span>
+										</label>
+									</div>
+									<div class="form-item form-buttons">
+										<button>Log in</button>
+										<button class="button secondary outline">Cancel</button>
+									</div>
+								</form>
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-left">
+								<pre class="dont-code"><code class="html">&lt;form method="post" action="" class="form" autocomplete="off"&gt;
+     &lt;div class="form-item"&gt;
+          &lt;label&gt;Email&lt;/label&gt;
+          &lt;input type="email" name="email"&gt;
+     &lt;/div&gt;
+
+     &lt;div class="form-item"&gt;
+          &lt;label&gt;Country&lt;/label&gt;
+          &lt;select &gt;
+               &lt;option value=""&gt;---&lt;/option&gt;
+               &lt;option value=""&gt;-----&lt;/option&gt;
+               &lt;option value=""&gt;--------&lt;/option&gt;
+               &lt;option value=""&gt;------------&lt;/option&gt;
+          &lt;/select&gt;
+     &lt;/div&gt;
+
+     &lt;div class="form-item multiple-radios"&gt;
+          &lt;label class="radio"&gt;
+               &lt;input name="example" type="radio"&gt;
+               &lt;span class="radio__label"&gt;I Lied&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;label class="radio"&gt;
+               &lt;input name="example" type="radio"&gt;
+               &lt;span class="radio__label"&gt;No, I didn't Lie&lt;/span&gt;
+          &lt;/label&gt;
+     &lt;/div&gt;
+
+     &lt;div class="form-item"&gt;
+          &lt;textarea rows="6"&gt;&lt;/textarea&gt;
+     &lt;/div&gt;
+
+     &lt;div class="form-item"&gt;
+          &lt;label class="checkbox"&gt;
+               &lt;input type="checkbox" /&gt;
+               &lt;span class="checkbox__label"&gt;Remember me&lt;/span&gt;
+          &lt;/label&gt;
+     &lt;/div&gt;
+
+     &lt;div class="form-item form-buttons"&gt;
+          &lt;button&gt;Log in&lt;/button&gt;
+          &lt;button class="button secondary outline"&gt;Cancel&lt;/button&gt;
+     &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+
+
+					<h3><span>#</span> Inputs</h3>
+					<p class="small full-width">
+						Here's a standard input field with type set as text. Label serves as input's label, and the following div with class desc serves as an optional description.
+					</p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-item">
+									<label>City</label>
+									<input type="text">
+									<div class="desc">We'd love to visit you sometimes</div>
+								</div>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+     &lt;div class="form-item"&gt;
+          &lt;label&gt;City&lt;/label&gt;
+          &lt;input type="text"&gt;
+          &lt;div class="desc"&gt;We'd love to visit you sometimes&lt;/div&gt;
+     &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+
+					<p class="small full-width">
+						Here are two text input fields, one with a placeholder and another one disabled, both set to be 6 grid columns wide.
+					</p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="row with-gutter">
+										<div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6">
+											<div class="form-item">
+												<input type="text" placeholder="Email">
+											</div>
+										</div>
+										<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+											<div class="form-item">
+												<input type="text" disabled="true" value="Disabled">
+											</div>
+										</div>
+									</div>
+
+									<div class="row with-gutter">
+										<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+											<div class="form-item">
+												<label>Your name <span class="is-warning">Thanks!</span></label>
+												<input class="success" type="text" placeholder="Name">
+											</div>
+										</div>
+										<div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6">
+											<div class="form-item">
+												<label>Your email <span class="is-warning">Your real email!</span></label>
+												<input class="error" type="text" placeholder="Email">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+    &lt;div class="row with-gutter"&gt;
+        &lt;div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6"&gt;
+            &lt;div class="form-item"&gt;
+                &lt;input type="text" placeholder="Email"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6"&gt;
+            &lt;div class="form-item"&gt;
+                &lt;input type="text" disabled="true" value="Disabled"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+
+					<p class="small full-width">
+						Here's how you deinfo-note required fields with required (<code>req</code>class), and add descriptions to labels using span with class <code>desc</code>.
+					</p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="row with-gutter">
+										<div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6">
+											<div class="form-item">
+												 <label>City <span class="req">*</span></label>
+												<input type="text">
+											</div>
+										</div>
+										<div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6">
+											<div class="form-item">
+											 	<label>Date <span class="desc">This will only be enabled if you pay us LOL</span></label>
+												<input type="text" disabled="true" value="Disabled">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+    &lt;div class="row with-gutter"&gt;
+        &lt;div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6"&gt;
+            &lt;div class="form-item"&gt;
+	      &lt;label&gt;City &lt;span class="req"&gt;*&lt;/span&gt;&lt;/label&gt;
+                &lt;input type="text"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6"&gt;
+            &lt;div class="form-item"&gt;
+                &lt;label&gt;Date &lt;span class="desc"&gt;description...&lt;/span&gt;&lt;/label&gt;
+                &lt;input type="text" disabled="true" value="Disabled"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+
+					<h3><span>#</span> Inline Inputs</h3>
+					<p class="small full-width">
+						Here's how you can inline inputs using <code>is-inline</code> to <code>form-item</code>.
+					</p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="row with-gutter">
+										<div class="col col-xs-12 col-sm-12 col-lmd-12 col-lg-12">
+											<div class="form-item is-inline">
+												<label>City <span class="req">*</span></label>
+												<input type="text">
+											</div>
+										</div>
+										<div class="col col-xs-12 col-sm-12 col-lmd-12 col-lg-12">
+											<div class="form-item is-inline">
+											 	<label>Date <span class="desc">This will only be enabled if you pay us LOL</span></label>
+												<input type="text" disabled="true" value="Disabled">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+    &lt;div class="row with-gutter"&gt;
+        &lt;div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6"&gt;
+            &lt;div class="form-item"&gt;
+	      &lt;label&gt;City &lt;span class="req"&gt;*&lt;/span&gt;&lt;/label&gt;
+                &lt;input type="text"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col col-xs-12 col-sm-6 col-lmd-6 col-lg-6"&gt;
+            &lt;div class="form-item"&gt;
+                &lt;label&gt;Date &lt;span class="desc"&gt;description...&lt;/span&gt;&lt;/label&gt;
+                &lt;input type="text" disabled="true" value="Disabled"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+					<h3><span>#</span> Search</h3>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="form-item">
+										<input type="search">
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+   &lt;div class="form-item"&gt;
+      &lt;input type="search"&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+
+
+					<h3><span>#</span> Checkbox & Radio button</h3>
+					<p class="small full-width">Radio button uses simple markup</p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="form-item">
+										<label class="radio">
+											<input name="example" type="radio">
+											<span class="radio__label">I lied</span>
+										</label>
+										<label class="radio">
+											<input name="example" type="radio">
+											<span class="radio__label">No, I didn't lie</span>
+										</label>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+   &lt;div class="form-item"&gt;
+        &lt;label class="radio"&gt;
+           &lt;input name="example" type="radio"&gt;
+           &lt;span class="radio__label"&gt;I Lied&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class="radio"&gt;
+           &lt;input name="example" type="radio"&gt;
+           &lt;span class="radio__label"&gt;No, I didn't Lie&lt;/span&gt;
+        &lt;/label&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+					<p class="small full-width">Radio buttons are in block form as defaults, to make them inline, use class <code>multiple-radios</code></p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="form-item multiple-radios">
+										<label class="radio">
+											<input name="example" type="radio">
+											<span class="radio__label">I lied</span>
+										</label>
+										<label class="radio">
+											<input name="example" type="radio">
+											<span class="radio__label">No, I didn't lie</span>
+										</label>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+   &lt;div class="form-item multiple-radios"&gt;
+        &lt;label class="radio"&gt;
+           &lt;input name="example" type="radio"&gt;
+           &lt;span class="radio__label"&gt;I Lied&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class="radio"&gt;
+           &lt;input name="example" type="radio"&gt;
+           &lt;span class="radio__label"&gt;No, I didn't Lie&lt;/span&gt;
+        &lt;/label&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+					<p class="small full-width">Checkboxes' markup is same as radio buttons.</p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="form-item">
+										<label class="checkbox">
+											<input name="example" type="checkbox">
+											<span class="checkbox__label">I lied</span>
+										</label>
+										<label class="checkbox">
+											<input name="example" type="checkbox">
+											<span class="checkbox__label">No, I didn't lie</span>
+										</label>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+   &lt;div class="form-item"&gt;
+        &lt;label class="checkbox"&gt;
+           &lt;input name="example" type="checkbox"&gt;
+           &lt;span class="checkbox__label"&gt;I Lied&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class="checkbox"&gt;
+           &lt;input name="example" type="checkbox"&gt;
+           &lt;span class="checkbox__label"&gt;No, I didn't Lie&lt;/span&gt;
+        &lt;/label&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+					<p class="small full-width">Checkboxes are in block form as defaults just like radio buttons, to make them inline, use class <code>multiple-checkboxes</code></p>
+					<div class="example">
+						<div class="row center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form class="form">
+									<div class="form-item multiple-checkboxes">
+										<label class="checkbox">
+											<input name="example" type="checkbox">
+											<span class="checkbox__label">I lied</span>
+										</label>
+										<label class="checkbox">
+											<input name="example" type="checkbox">
+											<span class="checkbox__label">No, I didn't lie</span>
+										</label>
+									</div>
+								</form>
+							</div>
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;form class="form"&gt;
+   &lt;div class="form-item multiple-checkboxes"&gt;
+        &lt;label class="checkbox"&gt;
+           &lt;input name="example" type="checkbox"&gt;
+           &lt;span class="checkbox__label"&gt;I Lied&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class="checkbox"&gt;
+           &lt;input name="example" type="checkbox"&gt;
+           &lt;span class="checkbox__label"&gt;No, I didn't Lie&lt;/span&gt;
+        &lt;/label&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+					<h3><span>#</span> Fieldset</h3>
+					<p class="small full-width">Fieldsets can be use as a best practices of UI designs. Also they are used to catgorize a complex form.</p>
+
+					<div class="example">
+						<div class="row with-gutter center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<fieldset>
+									<legend>Login data</legend>
+									<div class="form-item">
+										<label>Email</label>
+										<input type="email" name="user-email">
+									</div>
+									<div class="form-item">
+										<label>Password</label>
+										<input type="password" name="user-password">
+									</div>
+								</fieldset>
+							</div>
+						<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;fieldset&gt;
+      &lt;legend&gt;Login data&lt;/legend&gt;
+      &lt;div class="form-item"&gt;
+            &lt;label&gt;Email&lt;/label&gt;
+            &lt;input type="email" name="user-email"&gt;
+      &lt;/div&gt;
+      &lt;div class="form-item"&gt;
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input type="password" name="user-password"&gt;
+      &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+
+					<div class="example">
+						<div class="row with-gutter center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<fieldset>
+									<legend>About</legend>
+									<div class="form-item">
+										<textarea name="user-about" rows="5"></textarea>
+									</div>
+									<div class="form-item">
+										<button>Submit</button>
+									</div>
+								</fieldset>
+							</div>
+						<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<pre><code class="html">&lt;fieldset&gt;
+      &lt;legend&gt;About&lt;/legend&gt;
+      &lt;div class="form-item"&gt;
+	  &lt;textarea name="user-about" rows="5"&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;div class="form-item"&gt;
+            &lt;button&gt;Submit&lt;/button&gt;
+      &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+							</div>
+						</div>
+					</div>
+					<h3><span>#</span> Select Multiples</h3>
+					<div class="example">
+						<div class="row with-gutter center-lg">
+							<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<form method="post" action="" class="form">
+									<div class="form-item">
+										<label>Select multiple</label>
+										<select class="w50" multiple="multiple" size="10">
+											<optgroup label="Group 1">
+												<option value="1">Some text goes here</option>
+												<option value="2">Another choice could be here</option>
+												<option value="3">Yet another item to be chosen</option>
+											</optgroup>
+											<optgroup label="Group 2">
+												<option value="4">Some text goes here</option>
+												<option value="5">Another choice could be here</option>
+												<option value="6">Yet another item to be chosen</option>
+											</optgroup>
+											<optgroup label="Group 3">
+												<option value="7">Some text goes here</option>
+												<option value="8">Another choice could be here</option>
+												<option value="9">Yet another item to be chosen</option>
+											</optgroup>
+										</select>
+									</div>
+								</form>
+
+<pre><code class="html">&lt;form method="post" action="" class="form"&gt;
+    &lt;div class="form-item"&gt;
+        &lt;label&gt;Select multiple&lt;/label&gt;
+        &lt;select multiple="multiple" size="10"&gt;
+            &lt;optgroup label="Group 1"&gt;
+                &lt;option value=""&gt;...&lt;/option&gt;
+            &lt;/optgroup&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+        							</div>
+        						</div>
+        					</div>
+        				</div><!--  Ending FORMS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Buttons</h2></a>
+        				<div class="demo-heading display-none buttons">
+        					<h3><span>#</span> Primary</h3>
+        					<div class="example">
+        						<button class="button">Primary</button>
+        						<a href="#" class="button">Primary</a>
+        						<pre><code class="html">&lt;button class="button"&gt;Primary&lt;/button&gt;
+&lt;a href="#" class="button"&gt;Primary&lt;/a&gt;</code></pre>
+        					</div>
+
+
+        					<h3><span>#</span> Secondary</h3>
+        					<div class="example">
+        						<button class="button secondary">Secondary</button>
+        						<a href="#" class="button secondary">Secondary</a>
+        						<pre><code class="html">&lt;button class="button secondary"&gt;Secondary&lt;/button&gt;
+&lt;a href="#" class="button secondary"&gt;Secondary&lt;/a&gt;</code></pre>
+        					</div>
+
+
+
+        					<h3><span>#</span> Outlines</h3>
+        					<div class="example">
+        						<button class="button outline">Primary</button>
+        						<button class="button secondary outline">Secondary</button>
+        						<pre><code class="html">&lt;button class="button outline"&gt;Primary&lt;/button&gt;
+&lt;button class="button secondary outline"&gt;Secondary&lt;/button&gt;</code></pre>
+					</div>
+
+
+
+        					<h3><span>#</span> Disabled</h3>
+        					<div class="example">
+        						<button class="button disabled">Button</button>
+        						<button class="button outline disabled">Button</button>
+        						<button class="button secondary disabled">Button</button>
+        						<button class="button secondary outline disabled">Button</button>
+        						<pre><code class="html">&lt;button class="button disabled"&gt;Button&lt;/button&gt;
+&lt;button class="button outline disabled"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary disabled"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary outline disabled"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+
+        					<h3><span>#</span> Sizes</h3>
+        					<div class="example">
+        						<button class="button btn-xl">Extra large</button>
+        						<button class="button btn-l">Large</button>
+        						<button class="button secondary">Medium</button>
+        						<button class="button secondary btn-s">Small</button>
+        						<button class="button secondary btn-xs">Extra small</button>
+        						<pre><code class="html">&lt;button class="button btn-xl"&gt;Button&lt;/button&gt;
+&lt;button class="button btn-l"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary btn-s"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary btn-xs"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+        					<h3><span>#</span> Rounded</h3>
+        					<div class="example">
+        						<button class="button round">Button</button>
+        						<button class="button outline round">Button</button>
+        						<button class="button secondary round">Button</button>
+        						<button class="button secondary outline round">Button</button>
+        						<pre><code class="html">&lt;button class="button round"&gt;Button&lt;/button&gt;
+&lt;button class="button outline round"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary round"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary outline round"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+
+        					<h3><span>#</span> Raised</h3>
+        					<div class="example">
+        						<button class="button raised">Button</button>
+        						<button class="button raised">Button</button>
+        						<button class="button secondary raised">Button</button>
+        						<button class="button secondary raised">Button</button>
+        						<pre><code class="html">&lt;button class="button raised"&gt;Button&lt;/button&gt;
+&lt;button class="button raised"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary raised"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary raised"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+
+        					<h3><span>#</span> Uppercase</h3>
+        					<div class="example">
+        						<button class="button uppercase">Button</button>
+        						<button class="button outline uppercase">Button</button>
+        						<button class="button secondary uppercase">Button</button>
+        						<button class="button secondary outline uppercase">Button</button>
+        						<pre><code class="html">&lt;button class="button uppercase"&gt;Button&lt;/button&gt;
+&lt;button class="button outline uppercase"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary uppercase"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary outline uppercase"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+
+        					<h3><span>#</span> Block level</h3>
+        					<div class="example">
+        						<button class="button block">Button</button>
+        						<br>
+        						<button class="button outline block">Button</button>
+        						<br>
+        						<button class="button secondary block">Button</button>
+        						<br>
+        						<button class="button secondary outline block">Button</button>
+        						<pre><code class="html">&lt;button class="button block"&gt;Button&lt;/button&gt;
+&lt;button class="button outline block"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary block"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary outline block"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+
+        					<h3><span>#</span> Inverted</h3>
+        					<div class="example" style="background-color: #333">
+        						<button class="button inverted">Button</button>
+        						<button class="button outline inverted">Button</button>
+        						<pre><code class="html">&lt;button class="button inverted"&gt;Button&lt;/button&gt;
+&lt;button class="button outline inverted"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+					<h3><span>#</span> Icons</h3>
+					<p class="full-width small">
+						You can view full list of icons at <a href="https://themify.me/themify-icons">Themify Icons</a>
+					</p>
+					<div class="example">
+        						<button class="button"><i class="ti-files"></i></button>
+        						<button class="button"><i class="ti-harddrives"></i></button>
+        						<button class="button"><i class="ti-calendar"></i>Button</button>
+        						<button class="button outline"><i class="ti-search"></i>Button</button>
+        						<button class="button secondary"><i class="ti-menu"></i>Button</button>
+        						<button class="button secondary outline"><i class="ti-music"></i>Button</button>
+        						<pre><code class="html">Without any text
+
+&lt;button class="button"&gt;&lt;i class="ti-files"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class="button"&gt;&lt;i class="ti-harddrives"&gt;&lt;/i&gt;&lt;/button&gt;
+
+With Text
+
+&lt;button class="button"&gt;&lt;i class="ti-calendar"&gt;&lt;/i&gt;Button&lt;/button&gt;
+&lt;button class="button outline"&gt;&lt;i class="ti-search"&gt;&lt;/i&gt;Button&lt;/button&gt;
+&lt;button class="button secondary"&gt;&lt;i class="ti-menu"&gt;&lt;/i&gt;Button&lt;/button&gt;
+&lt;button class="button secondary outline"&gt;&lt;i class="ti-music"&gt;&lt;/i&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+
+
+					<h3><span>#</span> Custom button color</h3>
+					<div class="example">
+						<button class="button pink raised">Button</button>
+						<button class="button pink outline">Button</button>
+					<p class="full-width small">In your SCSS	</p>
+					<pre><code class="scss">.button.pink {
+	// $text-color, $back-color
+	@include button(#fff, #ff3366);
+}</code></pre>
+				<p class="full-width small">And in HTML</p>
+				<pre><code class="html">&lt;button class="button pink"&gt;Button&lt;/button&gt;
+&lt;button class="button pink outline"&gt;Button&lt;/button&gt;</code></pre>
+					</div>
+        				</div><!--  Ending buttons -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Labels</h2></a>
+				<div class="demo-heading display-none labels">
+					<h3><span>#</span> Base</h3>
+					<p class="full-width small">Labels are pretty simple and can be use with any reasonable tag.</p>
+					<div class="example">
+						<span class="label">Default</span>
+
+						&nbsp;
+						<span class="label success">Success</span>
+
+						&nbsp;
+						<span class="label error">Error</span>
+
+						&nbsp;
+						<span class="label warning">Warning</span>
+
+						&nbsp;
+						<span class="label focus">Focus</span>
+
+						&nbsp;
+						<span class="label black">Black</span>
+
+						&nbsp;
+						<span class="example-inverted-box"><span class="label inverted">Inverted</span></span>
+						<pre><code class="html">&lt;span class="label"&gt;Default&lt;/span&gt;
+
+&lt;span class="label success"&gt;Success&lt;/span&gt;
+
+&lt;span class="label error"&gt;Error&lt;/span&gt;
+
+&lt;span class="label warning"&gt;Warning&lt;/span&gt;
+
+&lt;span class="label focus"&gt;Focus&lt;/span&gt;
+
+&lt;span class="label black"&gt;Black&lt;/span&gt;
+
+&lt;span class="label inverted"&gt;Inverted&lt;/span&gt;</code></pre>
+					</div>
+
+
+
+					<h3><span>#</span> Outline</h3>
+					<div class="example">
+						<span class="label outline">Default</span>
+
+						&nbsp;
+						<span class="label success outline">Success</span>
+
+						&nbsp;
+						<span class="label error outline">Error</span>
+
+						&nbsp;
+						<span class="label warning outline">Warning</span>
+
+						&nbsp;
+						<span class="label focus outline">Focus</span>
+
+						&nbsp;
+						<span class="label black outline">Black</span>
+
+						&nbsp;
+						<span class="example-inverted-box"><span class="label inverted outline">Inverted</span></span>
+						<pre><code class="html">&lt;span class="label outline"&gt;Default&lt;/span&gt;
+
+&lt;span class="label success outline"&gt;Success&lt;/span&gt;
+
+&lt;span class="label error outline"&gt;Error&lt;/span&gt;
+
+&lt;span class="label warning outline"&gt;Warning&lt;/span&gt;
+
+&lt;span class="label focus outline"&gt;Focus&lt;/span&gt;
+
+&lt;span class="label black outline"&gt;Black&lt;/span&gt;
+
+&lt;span class="label inverted outline"&gt;Inverted&lt;/span&gt;</code></pre>
+					</div>
+
+
+
+					<h3><span>#</span> Uppercase</h3>
+					<div class="example">
+						<span class="label uppercase">Default</span>
+
+						&nbsp;
+						<span class="label success uppercase">Success</span>
+
+						&nbsp;
+						<span class="label error uppercase">Error</span>
+
+						&nbsp;
+						<span class="label warning uppercase">Warning</span>
+
+						&nbsp;
+						<span class="label focus uppercase">Focus</span>
+
+						&nbsp;
+						<span class="label black uppercase">Black</span>
+
+						&nbsp;
+						<span class="example-inverted-box"><span class="label inverted uppercase">Inverted</span></span>
+						<pre><code class="html">&lt;span class="label uppercase"&gt;Default&lt;/span&gt;
+
+&lt;span class="label success uppercase"&gt;Success&lt;/span&gt;
+
+&lt;span class="label error uppercase"&gt;Error&lt;/span&gt;
+
+&lt;span class="label warning uppercase"&gt;Warning&lt;/span&gt;
+
+&lt;span class="label focus uppercase"&gt;Focus&lt;/span&gt;
+
+&lt;span class="label black uppercase"&gt;Black&lt;/span&gt;
+
+&lt;span class="label inverted uppercase"&gt;Inverted&lt;/span&gt;</code></pre>
+					</div>
+
+
+
+
+
+					<h3><span>#</span> Tag</h3>
+					<div class="example">
+						<span class="label tag">Default</span>
+
+						&nbsp;
+						<span class="label success tag">Success</span>
+
+						&nbsp;
+						<span class="label error tag">Error</span>
+
+						&nbsp;
+						<span class="label warning tag">Warning</span>
+
+						&nbsp;
+						<span class="label focus tag">Focus</span>
+
+						&nbsp;
+						<span class="label black tag">Black</span>
+
+						&nbsp;
+						<span class="example-inverted-box"><span class="label inverted tag">Inverted</span></span>
+						<pre><code class="html">&lt;span class="label tag"&gt;Default&lt;/span&gt;
+
+&lt;span class="label success tag"&gt;Success&lt;/span&gt;
+
+&lt;span class="label error tag"&gt;Error&lt;/span&gt;
+
+&lt;span class="label warning tag"&gt;Warning&lt;/span&gt;
+
+&lt;span class="label focus tag"&gt;Focus&lt;/span&gt;
+
+&lt;span class="label black tag"&gt;Black&lt;/span&gt;
+
+&lt;span class="label inverted tag"&gt;Inverted&lt;/span&gt;</code></pre>
+					</div>
+
+
+
+					<h3><span>#</span> Badges</h3>
+					<p class="full-width small">Labels are ideal for use as badges with badge class.</p>
+					<div class="example">
+						<span class="label badge">1</span>
+
+						&nbsp;
+						<span class="label success badge">2</span>
+
+						&nbsp;
+						<span class="label error badge">3</span>
+
+						&nbsp;
+						<span class="label warning badge">4</span>
+
+						&nbsp;
+						<span class="label focus badge">5</span>
+
+						&nbsp;
+						<span class="label black badge">6</span>
+
+						&nbsp;
+						<span class="example-inverted-box"><span class="label inverted badge">7</span></span>
+						<pre><code class="html">&lt;span class="label badge"&gt;1&lt;/span&gt;
+
+&lt;span class="label success badge"&gt;2&lt;/span&gt;
+
+&lt;span class="label error badge"&gt;3&lt;/span&gt;
+
+&lt;span class="label warning badge"&gt;4&lt;/span&gt;
+
+&lt;span class="label focus badge"&gt;5&lt;/span&gt;
+
+&lt;span class="label black badge"&gt;6&lt;/span&gt;
+
+&lt;span class="label inverted badge"&gt;7&lt;/span&gt;</code></pre>
+					</div>
+
+
+
+
+
+
+
+					<h3><span>#</span> Outline Badges</h3>
+					<div class="example">
+						<span class="label badge outline">1</span>
+
+						&nbsp;
+						<span class="label success badge outline">2</span>
+
+						&nbsp;
+						<span class="label error badge outline">3</span>
+
+						&nbsp;
+						<span class="label warning badge outline">4</span>
+
+						&nbsp;
+						<span class="label focus badge outline">5</span>
+
+						&nbsp;
+						<span class="label black badge outline">6</span>
+
+						&nbsp;
+						<span class="example-inverted-box"><span class="label inverted badge outline">7</span></span>
+						<pre><code class="html">&lt;span class="label badge outline"&gt;1&lt;/span&gt;
+
+&lt;span class="label success badge outline"&gt;2&lt;/span&gt;
+
+&lt;span class="label error badge outline"&gt;3&lt;/span&gt;
+
+&lt;span class="label warning badge outline"&gt;4&lt;/span&gt;
+
+&lt;span class="label focus badge outline"&gt;5&lt;/span&gt;
+
+&lt;span class="label black badge outline"&gt;6&lt;/span&gt;
+
+&lt;span class="label inverted badge outline"&gt;7&lt;/span&gt;</code></pre>
+					</div>
+
+
+
+
+
+					<h3><span>#</span> Custom</h3>
+					<p class="full-width small">You can use mixins to customize your labels, tags and badges.</p>
+					<div class="example">
+						<span class="label pink">Label</span>
+
+						&nbsp;
+						<span class="label pink badge">1</span>
+
+						&nbsp;
+						<span class="label pink tag">Tag</span>
+						<p class="full-width small">In your SCSS	</p>
+					<pre><code class="scss">.label.pink {
+    // $text-color, $back-color
+    @include label(#fff, #ea48a7);
+}</code></pre>
+				<p class="full-width small">And in HTML</p>
+				<pre><code class="html">&lt;span class="label pink"&gt;Label&lt;/span&gt;
+
+&lt;span class="label pink badge"&gt;1&lt;/span&gt;
+
+&lt;span class="label pink tag"&gt;Tag&lt;/span&gt;</code></pre>
+
+					</div>
+				</div><!--  Ending LABELS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Notes</h2></a>
+				<div class="demo-heading display-none info-notes">
+					<h3><span>#</span> Usage</h3>
+
+					<div class="example">
+						<div class="info-note" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+
+
+					<div class="example">
+						<div class="info-note error" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note error" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+
+
+					<div class="example">
+						<div class="info-note success" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note success" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+
+
+					<div class="example">
+						<div class="info-note warning" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note warning" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+
+
+					<div class="example">
+						<div class="info-note focus" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note focus" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+
+
+					<div class="example">
+						<div class="info-note black" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note black" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+
+
+					<div class="example" style="background-color: #333;">
+						<div class="info-note inverted" data-component="info-note">You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span></div>
+						<pre><code class="html">&lt;div class="info-note inverted" data-component="info-note"&gt; ...  &lt;span class="close small"&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+					</div>
+				</div><!--  Ending Notes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<a class="sec-toggle" href="#0"><span class="line"></span><h2>Breadcrumbs</h2></a>
+				<div class="demo-heading display-none breadcrumb">
+					<h3><span>#</span> Base</h3>
+					<div class="example">
+						<nav class="breadcrumbs">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Catalog</a></li>
+								<li><a href="#">T-Shirts</a></li>
+								<li class="active"><a href="">Brand</a></li>
+							</ul>
+						</nav>
+
+						<pre><code class="html">&lt;nav class="breadcrumbs"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+						</div>
+
+
+					<h3><span>#</span> Centered</h3>
+					<div class="example">
+						<nav class="breadcrumbs push-center">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Catalog</a></li>
+								<li><a href="#">T-Shirts</a></li>
+								<li class="active"><a href="">Brand</a></li>
+							</ul>
+						</nav>
+
+						<pre><code class="html">&lt;nav class="breadcrumbs push-center"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+						</div>
+
+
+					<h3><span>#</span> Custom separtor</h3>
+					<div class="example">
+						<nav id="breadcrumbs-withCustom-separator" class="breadcrumbs ">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Catalog</a></li>
+								<li><a href="#">T-Shirts</a></li>
+								<li class="active"><a href="">Brand</a></li>
+							</ul>
+						</nav>
+						<p class="full-width small">In your CSS	</p>
+						<pre><code class="css">#breadcrumbs-withCustom-separator li:after {
+    content: '\25b6';
+}</code></pre>
+						<p class="full-width small">And in HTML</p>
+						<pre><code class="html">&lt;nav id="breadcrumbs-withCustom-separator" class="breadcrumbs"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+						</div>
+					</div><!--  Ending BREADCRUMBS -->
+
+					<a class="sec-toggle" href="#0"><span class="line"></span><h2>Pagination</h2></a>
+					<div class="demo-heading display-none">
+						<h3><span>#</span> Base</h3>
+						<div class="example">
+							<nav class="pagination">
+								<ul>
+									<li class="prev"><a href="#">←</a></li>
+									<li>
+										<ul>
+											<li><span>1</span></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+									</li>
+									<li class="next"><a href="#">→</a></li>
+								</ul>
+							</nav>
+								<pre><code class="html">&lt;nav class="pagination"&gt;
+    &lt;ul&gt;
+        &lt;li class="prev"&gt;&lt;a href=""&gt;&larr;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="next"&gt;&lt;a href=""&gt;&rarr;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+						</div>
+
+
+						<h3><span>#</span> Centered</h3>
+						<div class="example">
+							<nav class="pagination pager-center">
+								<ul>
+									<li class="prev"><a href="#">←</a></li>
+									<li>
+										<ul>
+											<li><span>1</span></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+									</li>
+									<li class="next"><a href="#">→</a></li>
+								</ul>
+							</nav>
+								<pre><code class="html">&lt;nav class="pagination pager-center"&gt;
+    &lt;ul&gt;
+        &lt;li class="prev"&gt;&lt;a href=""&gt;&larr;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="next"&gt;&lt;a href=""&gt;&rarr;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+						</div>
+
+
+
+						<h3><span>#</span> Full width</h3>
+						<p class="small full-width">Here you can see an example where previous and next buttons are aligned to the left and to the right, with a link in the center of the page.</p>
+						<div class="example">
+							<nav class="pagination pager-center uppercase semibold">
+								<ul>
+									<li class="prev col-xs-1 col-sm-1 col-md-1 col-lg-1"><a href="#">&lt; Prev</a></li>
+									<li class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+										<ul>
+											<li><a href="#">Back to catalog</a></li>
+										</ul>
+									</li>
+									<li class="next col-xs-1 col-sm-1 col-md-1 col-lg-1"><a href="#">Next &gt;</a></li>
+								</ul>
+							</nav>
+							<pre><code class="html">&lt;nav class="pagination pager-center uppercase semibold"&gt;
+    &lt;ul&gt;
+        &lt;li class="prev col-xs-1 col-sm-1 col-md-1 col-lg-1"&gt;&lt;a href=""&gt;Prev&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="col-xs-9 col-sm-9 col-md-9 col-lg-9"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="next col-xs-1 col-sm-1 col-md-1 col-lg-1"&gt;&lt;a href=""&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<h3><span>#</span> Pager</h3>
+						<div class="example">
+							<nav class="pagination pager">
+								<ul>
+									<li class="prev"><a href="#">&lt; Prev</a></li>
+									<li class="next"><a href="#">Next &gt;</a></li>
+								</ul>
+							</nav>
+							<pre><code class="html">&lt;nav class="pagination pager"&gt;
+    &lt;ul&gt;
+        &lt;li class="prev"&gt;&lt;a href=""&gt;Prev&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="next"&gt;&lt;a href=""&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+							<nav class="pagination pager pager-center">
+								<ul>
+									<li class="prev"><a href="#">&lt; Prev</a></li>
+									<li class="next"><a href="#">Next &gt;</a></li>
+								</ul>
+							</nav>
+							<pre><code class="html">&lt;nav class="pagination pager pager-center"&gt;
+    &lt;ul&gt;
+        &lt;li class="prev"&gt;&lt;a href=""&gt;Prev&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="next"&gt;&lt;a href=""&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+						</div>
+						<p class="small full-width">Elements within a single list item can be stacked to create a clean and intuitive pagination elements.</p>
+						<div class="example">
+							<nav class="pagination pager flat">
+								<ul>
+									<li class="prev">
+										<span class="label tag">Prev</span>
+										<a href="#">How psychology helps in visual designs</a>
+									</li>
+									<li class="next">
+										<span class="label tag">Next</span>
+										<a href="#">Apple reached highest in stock this year!</a>
+									</li>
+								</ul>
+							</nav>
+							<pre><code class="html"> &lt;nav class="pagination pager flat"&gt;
+	 &lt;ul&gt;
+		 &lt;li class="prev"&gt;
+			 &lt;span class="label tag"&gt;Prev &lt;/span&gt;
+			 &lt;a href="#"&gt;How psychology helps in visual designs &lt;/a&gt;
+		 &lt;/li&gt;
+		 &lt;li class="next"&gt;
+			 &lt;span class="label tag"&gt;Next &lt;/span&gt;
+			 &lt;a href="#"&gt;Apple reached highest in stock this year! &lt;/a&gt;
+		 &lt;/li&gt;
+	 &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+						</div>
+					</div><!-- End PAGINATION -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<a class="sec-toggle" href="#0"><span class="line"></span><h2>Dropdown</h2></a>
+					<div class="demo-heading display-none">
+						<h3><span>#</span> Basic usage</h3>
+						<p class="small full-width">Create a button or link that triggers your dropdown, your trigger button must have these attributes <code>data-component="dropdown"</code> & <code>data-target="#{ID of Dropdown container}"</code></p>
+						<div class="example">
+							<button class="button"  data-component="dropdown" data-target="#my-dropdown">Services <span class="icon ti-angle-down"></span></button>
+							<div class="dropdown" id="my-dropdown">
+								<div class="dropdown-content">
+									<ul>
+										<li>Programming</li>
+										<li>Computer Science</li>
+										<li>Artificial Intelligence </li>
+										<li><span class="label error">Label Error</span></li>
+										<hr>
+										<li>You can add divide too!</li>
+										<li>About Us</li>
+										<li><span class="label focus">Label Focus</span></li>
+									</ul>
+								</div>
+							</div>
+							<pre><code class="html">&lt;!-- Button that triggers --&gt;
+&lt;button class="button"  data-component="dropdown" data-target="#my-dropdown"&gt;
+	Services
+	&lt;span class="icon ti-angle-down"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Anywhere on your page, that have the ID that you set in your triggers "data-target" attribute --&gt;
+&lt;div class="dropdown" id="my-dropdown"&gt;
+	&lt;div class="dropdown-content"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Programming&lt;/li&gt;
+			&lt;li&gt;...&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+						</div>
+
+						<h3><span>#</span> Dynamic content</h3>
+						<p class="small full-width">You can add any html content in <code>dropdown-content</code> container</p>
+						<div class="example">
+							<button class="button"  data-component="dropdown" data-target="#dynamic-dropdown">Features <span class="icon ti-angle-down"></span></button>
+							<div class="dropdown" id="dynamic-dropdown">
+							<div class="dropdown-content">
+								<p>Wanna hear more features of dropdown? You can close dropdown using <code>ESC</code> button. Also, if you click outside of dropdown, it'll close itself automatically! Awesome, eh?</p>
+							</div>
+						</div>
+							<pre><code class="html">&lt;!-- Button that triggers --&gt;
+&lt;button class="button"  data-component="dropdown" data-target="#dynamic-dropdown"&gt;
+	Features
+	&lt;span class="icon ti-angle-down"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Anywhere on your page, that have the ID that you set in your triggers "data-target" attribute --&gt;
+&lt;div class="dropdown" id="dynamic-dropdown"&gt;
+	&lt;div class="dropdown-content"&gt;
+		&lt;p&gt;Wanna hear more features of dropdown?
+		You can close dropdown using &lt;code&gt;ESC&lt;/code&gt; button.
+		Also, if you click outside of dropdown, it'll close itself automatically!
+		Awesome, eh?&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+						</div>
+
+
+
+						<h3><span>#</span> Menu style</h3>
+						<p class="small full-width">To make list items menu-styled, add anchor tags and add a class to the dropdown container <code>menu-style</code></p>
+						<div class="example">
+							<button class="button"  data-component="dropdown" data-target="#menu-dropdown">Services <span class="icon ti-angle-down"></span></button>
+							<div class="dropdown" id="menu-dropdown">
+								<div class="dropdown-content menu-style">
+									<ul>
+										<li><a href="#0">Programming</a></li>
+										<li><a href="#0">Computer Science</a></li>
+										<li><a href="#0">Artificial Intelligence </a></li>
+										<li><a href="#0"><span class="label error">Label Error</span></a></li>
+										<hr>
+										<li><a href="#0">You can add divide too!</a></li>
+										<li><a href="#0">About Us</a></li>
+										<li><a href="#0"><span class="label focus">Label Focus</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<pre><code class="html">&lt;!-- Button that triggers --&gt;
+&lt;button class="button"  data-component="dropdown" data-target="#menu-dropdown"&gt;
+	Services
+	&lt;span class="icon ti-angle-down"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Anywhere on your page, that have the ID that you set in your triggers "data-target" attribute --&gt;
+&lt;div class="dropdown" id="menu-dropdown"&gt;
+	&lt;div class="dropdown-content menu-style"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#0"&gt;Programming&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;...&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+						</div>
+
+
+						<h3><span>#</span> Sticky</h3>
+						<p class="small full-width">Scroll down a bit to make a fixed navigation bar appear at the top of the page, and then try out "Account" dropdown. P.S it works automatically :p</p>
+						<div class="example">
+							<header id="demo-nav" class="row middle-sm middle-md middle-lg" data-type="demo_sticky">
+								<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+									<a class="logo" href="#0"><img src="img/logo.png" alt=""></a>
+								</div>
+								<nav class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+									<ul>
+										<li><a href="#0">Home</a></li>
+										<li><a data-component="dropdown" data-target="#sticky-dropdown" href="#0">Services<span class="icon ti-angle-down"></span></a></li>
+										<li><a href="#0">Shop</a></li>
+										<li><a href="#0">About Us</a></li>
+									</ul>
+								</nav>
+							</header>
+						</div>
+						<div class="dropdown" id="sticky-dropdown">
+							<div class="dropdown-content menu-style">
+								<ul>
+									<li><a href="#0">Clean Code</a></li>
+									<li><a href="#0">Well Maintained</a></li>
+									<li><a href="#0">Designing</a></li>
+									<hr>
+									<li><a href="#0">Support</a></li>
+									<li><a href="#0">FAQ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!--  Ending DROPDOWN -->
+
+
+
+
+
+
+
+					<a class="sec-toggle" href="#0"><span class="line"></span><h2>Modal</h2></a>
+					<div class="demo-heading display-none">
+						<h3><span>#</span> Usage</h3>
+						<p class="small full-width">Create a button or link that triggers your modal box, your trigger button must have these attributes <code>data-component="modal"</code> & <code>data-target="#{ID of your modal container}"</code>. Watch example below for details:</p>
+						<div class="example">
+							<button data-component="modal" data-target="#my-modal">Open modal</button>
+							<div id="my-modal" class="modal-box display-none">
+								<div class="modal-wrapper">
+									<div>
+										<div class="modal">
+											<span class="close"></span>
+											<div class="modal-header">Modal Header</div>
+											<div class="modal-body"><p class="full-width">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p><p class="full-width">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<pre><code class="html">&lt;!-- Button that triggers --&gt;
+&lt;button data-component="modal" data-target="#my-modal"&gt;
+	Open modal
+&lt;/button&gt;
+
+&lt;!-- Anywhere on your page, that have the ID that you set in your triggers "data-target" attribute --&gt;
+&lt;div id="my-modal" class="modal-box display-none"&gt;
+	&lt;div class="modal-wrapper"&gt;
+		&lt;div&gt;
+			&lt;div class="modal"&gt;
+				&lt;span class="close"&gt;&lt;/span&gt;
+				&lt;div class="modal-header"&gt;{HEADER TEXT}&lt;/div&gt;
+				&lt;div class="modal-body"&gt;
+					&lt;p&gt; {BODY TEXT HERE}&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+						</div>
+					</div><!--  Ending MODAL -->
+
+
+
+
+
+
+					<a class="sec-toggle" href="#0"><span class="line"></span><h2>Tooltip</h2></a>
+					<div class="demo-heading display-none">
+						<h3><span>#</span> Usage</h3>
+						<p class="small full-width">Tooltip can be placed on any tag. You simply have to make that tag's data-component attribute like this <code>data-component="modal"</code> & <code>data-tip-text="{ your tooltip text here }"</code></p>
+						<div class="example">
+
+								<a data-component="tooltip" href="#" data-tip-text="I react the exact same way to water.  We are connected.">Hover on me!</a>
+
+								<span class="small">Or you can use it on simple text <i class="semibold" data-component="tooltip"  data-tip-text="I react the exact same way to water.  We are connected, you and I. We're on the same curve, just on opposite ends. You know that?">like this one</i></span>
+
+								<pre><code class="html">
+&lt;a href="#" data-component="tooltip" data-tip-text="{TOOLTIP TEXT HERE}"&gt;Hover on me!&lt;/a&gt;
+
+&lt;span&gt;
+	&lt;i class="semibold" data-component="tooltip" data-tip-text="{TOOLTIP TEXT HERE}"&gt;
+		like this one
+	&lt;/i&gt;
+&lt;/span&gt;
+								</code></pre>
+						</div>
+					</div><!--  Ending TOOLTIP -->
+
+
+
+
+
+
+
+					<a class="sec-toggle" href="#0"><span class="line"></span><h2>Tabs</h2></a>
+					<div class="demo-heading display-none">
+						<h3><span>#</span> Usage</h3>
+						<div class="example">
+							<div class="tabs" data-component="tabs">
+
+								<a class="tab-name" href="">First Tab</a>
+								<div class="tab-content">
+									First Tab Content - Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+
+								<a class="tab-name" href="">Second Tab</a>
+								<div class="tab-content">
+									Second Tab Content - Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason. consectetur adipisicing elit, tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+
+								<a class="tab-name" href="">Third Tab</a>
+								<div class="tab-content">
+									Third Tab Content - Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pateur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+
+								<a class="tab-name" href="">Fourth Tab</a>
+								<div class="tab-content">
+									Fourth Tab Content - Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than minur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+
+
+							<pre><code class="html">&lt;div class="tabs" data-component="tabs"&gt;
+
+	&lt;a class="tab-name" href=""&gt;First Tab&lt;/a&gt;
+	&lt;div class="tab-content"&gt; ... &lt;/div&gt;
+
+	&lt;a class="tab-name" href=""&gt;Second Tab&lt;/a&gt;
+	&lt;div class="tab-content"&gt; ... &lt;/div&gt;
+
+	&lt;a class="tab-name" href=""&gt;Third Tab&lt;/a&gt;
+	&lt;div class="tab-content"&gt; ... &lt;/div&gt;
+
+	&lt;a class="tab-name" href=""&gt;Fourth Tab&lt;/a&gt;
+	&lt;div class="tab-content"&gt; ... &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+						</div>
+					</div><!--  Tabs  -->
+
+
+
+					<a class="sec-toggle" href="#0"><span class="line"></span><h2>Collapse</h2></a>
+					<div class="demo-heading display-none">
+						<h3><span>#</span> Usage</h3>
+						<div class="example">
+							<ul id="demo-collapse">
+								<li><a href="#">Installation</a></li>
+								<li><a href="#">Configuration</a></li>
+								<li><a href="#">Adding Content</a></li>
+								<li><a href="#">Templates</a></li>
+								<li data-component="collapse">
+									<a href="#" class="collapse-toggle">Languages <span class="icon ti-angle-down"></span></a>
+									<ul class="collapse-box">
+										<li><a href="#">Setup</a></li>
+										<li><a href="#">Translating content</a></li>
+										<li><a href="#">Language variables</a></li>
+										<li><a href="#">Supporting RTL</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Callbacks</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</div>
+
+						<pre><code class="html">&lt;ul id="demo-collapse"&gt;
+
+	&lt;li&gt;&lt;a href="#"&gt; ... &lt;/a&gt;&lt;/li&gt;
+
+	&lt;li data-component="collapse"&gt;
+		&lt;a href="#" class="collapse-toggle"&gt;Languages &lt;span class="icon ti-angle-down"&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;ul class="collapse-box"&gt;
+			&lt;li&gt;&lt;a href="#"&gt; ... &lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt; ... &lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt; ... &lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+
+	&lt;li&gt;&lt;a href="#"&gt; ... &lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;</code></pre>
+					</div><!--  Ending Collapseable Box -->
+
+
+
+
+
+
+
+
+
+		</div>
+	<!-- <script src="js/scripts/localstorage.js" defer></script>
+	<script src="js/scripts/zzscript.js" defer></script> -->
+	<script src="js/scripts/jquery.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

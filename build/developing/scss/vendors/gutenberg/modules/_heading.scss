@@ -1,0 +1,95 @@
+/* All Headings
+	 ========================================================================== */
+
+// Headings Options
+// [ h1: size (in px), smaller-screen-size (in px), line height (* leading), margin top (* leading), margin bottom (* leading) ]
+$headings: (
+	h1: (50, 40, 2.0, 1),
+	h2: (42, 36, 1.5, 1),
+	h3: (36, 30, 1.0, 1),
+	h4: (30, 24, 1.0, 1),
+	h5: (24, 18, 1.0, 1),
+	h6: (16, 15, 1.0, 1)
+	) !default;
+
+$fontSizes: (
+	xxxxl: (46, 42, 2.0, 4.0, 1.0),
+	xxxl: (38, 34, 2.0, 4.0, 1.0),
+	xxl: (28, 24, 2.0, 4.0, 1.0),
+	xl: (20, 18, 1.5, 2.5, 0.5),
+	l: (18, 18, 1.5, 2.5, 0.5),
+	m: (16, 16, 1.0, 2.0, 0.5),
+	s: (14, 14, 1.0, 1.5, 0.5),
+	xs: (12, 12, 1.0, 2.5, 0.5),
+	xxs: (10, 12, 1.0, 2.5, 0.5)
+	) !default;
+
+// generating classes of font sizes
+@each $fontSize, $properties in $fontSizes {
+	.font-#{$fontSize} {
+		@include font-size(nth($properties, 2));
+		@include line-height(nth($properties, 3));
+	}
+}
+
+
+// Set headings sizes, line-heights and margins
+@import '../mixins/font-size';
+@import '../mixins/line-height';
+@import '../mixins/margin';
+@each $heading, $properties in $headings {
+	#{$heading} {
+		@include font-size(nth($properties, 2));
+		@include line-height(nth($properties, 3));
+		@include margin-bottom(nth($properties, 4));
+	}
+}
+
+@media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+	$leading: $leading-desktop;
+	$leading-rem: $leading-rem-desktop;
+
+	@each $heading, $properties in $headings {
+		#{$heading} {
+			@include font-size(nth($properties, 1));
+			@include line-height(nth($properties, 3));
+			@include margin-bottom(nth($properties, 4));
+		}
+	}
+
+}
+
+// Change headings font if a heading font is set
+@if $font-headings != null {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 0;
+		font-family: $font-headings;
+		font-weight: 300;
+	}
+} @else {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 0;
+		font-weight: 300;
+	}
+}
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-weight: 600;
+}
+
+hgroup {
+	display: block;
+}

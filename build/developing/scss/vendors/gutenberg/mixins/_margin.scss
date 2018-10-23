@@ -1,0 +1,31 @@
+// Margin-top
+
+// $leadingValue: $leading-desktop;
+// $leadingRemValue: $leading-rem-desktop;
+$leadingValue: 31;
+$leadingRemValue: 1.72222222;
+
+@mixin margin-top($number) {
+  margin-top: #{ $number * $leadingValue + 'px'};
+  margin-top: #{ $number * $leadingRemValue + 'rem'};
+}
+
+// Margin-bottom
+@mixin margin-bottom($number) {
+  margin-bottom: #{ $number * $leadingValue + 'px'};
+  margin-bottom: #{ $number * $leadingRemValue + 'rem'};
+}
+
+// Margin
+@mixin margin($top, $right, $bottom:null, $left:null) {
+  @if $left == null and $bottom == null {
+    margin: #{ $top * $leadingValue + 'px'} #{ $right * $leadingValue + 'px'};
+    margin: #{ $top * $leadingRemValue + 'rem'} #{ $right * $leadingRemValue + 'rem'};
+  } @else if $left == null or $left == $right {
+    margin: #{ $top * $leadingValue + 'px'} #{ $right * $leadingValue + 'px'} #{ $bottom * $leadingValue + 'px'};
+    margin: #{ $top * $leadingRemValue + 'rem'} #{ $right * $leadingRemValue + 'rem'} #{ $bottom * $leadingRemValue + 'rem'};
+  } @else {
+    margin: #{ $top * $leadingValue + 'px'} #{ $right * $leadingValue + 'px'} #{ $bottom * $leadingValue + 'px'} #{ $left * $leadingValue + 'px'};
+    margin: #{ $top * $leadingRemValue + 'rem'} #{ $right * $leadingRemValue + 'rem'} #{ $bottom * $leadingRemValue + 'rem'} #{ $left * $leadingRemValue + 'rem'};
+  }
+}

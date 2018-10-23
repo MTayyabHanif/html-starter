@@ -1,0 +1,176 @@
+/*
+
+Buttons
+
+Buttons and their variations
+
+Markup:
+<button class="button {{modifier_class}}">Button</a>
+<a href="#" class="button {{modifier_class}}">Button</a>
+
+.button       - A link that's sized like a button
+
+*/
+
+
+.button {
+	border-radius: 3px;
+	display: inline-block;
+	transition: border-color .1s ease-in-out,
+	background-color .1s ease-in-out,
+	box-shadow .1s ease-in-out,
+	color .1s ease-in-out;
+	margin: 0;
+	margin-bottom: .5rem;
+	border: 1px solid $primary;
+	background-color: $primary;
+	cursor: pointer;
+	padding: 0 20px;
+	min-width: 40px;
+	overflow: hidden;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	line-height: 38px;
+	white-space: nowrap;
+	color: $color-lightshade5;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-font-smoothing: subpixel-antialiased;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+
+	i, .icon ,
+	[class^="fa-"], [class*=" fa-"],
+	[class^="ti-"], [class*=" ti-"]{
+		position: relative;
+		margin: 0 6px;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+	}
+
+	&:focus,
+	&:hover {
+		background-color: $primary-light;
+		color: $white;
+	}
+
+	&:focus{
+		outline: none;
+	}
+	&:active{
+		background-color: $primary-dark;
+	}
+	&.btn-icon{
+		padding: 0 10px;
+	}
+
+	&.btn-xs{
+		padding: 0 12px;
+		min-width: 24px;
+		line-height: 24px;
+		font-size: 12px;
+	}
+	&.btn-s{
+		padding: 0 15px;
+		min-width: 30px;
+		line-height: 30px;
+		font-size: 13px;
+	}
+	&.btn-l{
+		padding: 0 25px;
+		min-width: 50px;
+		line-height: 50px;
+		font-size: 16px;
+	}
+	&.btn-xl{
+		padding: 0 30px;
+		min-width: 60px;
+		line-height: 60px;
+		font-size: 18px;
+	}
+	&.uppercase{
+		font-size: 70%;
+		font-weight: 600;
+	}
+
+	&.is-loading{
+		position: relative;
+		overflow: initial;
+		pointer-events: none;
+
+		&:after{
+			content: '';
+			position: absolute;
+			width: calc(100% + 2px);
+			height: calc(100% + 2px);
+			border-radius: 3px;
+			background-color: rgba(255, 255, 255, .3);
+			z-index: 1;
+			left: -1px;
+			top: -1px;
+		}
+		&:before{
+			content: '';
+			position: relative;
+			z-index: 2;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: .5em;
+			border-radius: 50%;
+			border: 3px solid rgba(255, 255, 255, 0.25);
+			border-bottom-color: #fff;
+			animation: loadingRotate 2s linear 0s infinite;
+			vertical-align: -4px;
+		}
+	}
+}
+button{
+	@extend .button;
+}
+
+.button.outline {
+	background: transparent;
+	border-color: $primary-dark;
+	color: $primary-dark;
+	&:focus, &:hover {
+		background: $primary;
+		color: $white;
+	}
+}
+
+.button.round {
+	border-radius: 100px;
+}
+
+.button.raised {
+	box-shadow: 1px 8px 8px -3px rgba(0, 0, 0, 0.18);
+	&:hover{
+		box-shadow: 1px 4px 8px -3px rgba(0, 0, 0, 0.18);
+	}
+}
+
+.button.block {
+	display: block;
+	width: 100%;
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+
+// Secondary
+.button.secondary {
+	@include button($white, $secondary);
+}
+
+// Inverted
+.button.inverted {
+	@include button($black, $white);
+}

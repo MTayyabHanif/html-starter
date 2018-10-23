@@ -1,0 +1,41 @@
+.wrap{
+	box-sizing: border-box;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+.sidebar {
+    background-color: rgba(135, 210, 240, 0.29);
+}
+.user-image{
+	margin-top: 120px;
+}
+.user-image>img{
+	width: 182px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.contact-details, .Hobbies-details, .Languages-details, .Skills-details {
+	padding: 30px;
+	padding-top: 0px;
+}
+.contact-details p, .Hobbies-details p, .Languages-details p, .Skills-details p {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 8px;
+}
+span.date {
+	display: block;
+	color: skyblue;
+	font-size: 1.2rem;
+}
+.maincontent{
+	padding: 4rem;
+}
+.section-heading{
+	text-decoration: underline;
+}
+.other-skills span{
+	display: block;
+}

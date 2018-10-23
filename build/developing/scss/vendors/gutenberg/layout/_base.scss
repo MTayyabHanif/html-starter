@@ -1,0 +1,36 @@
+/* Defaults
+   ========================================================================== */
+
+   body,
+   html {
+
+   	@media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+   		margin: 0;
+   		width: 100%;
+   		max-width: none;
+   	}
+
+   }
+
+// Font defaults
+html {
+	box-sizing: border-box;
+	line-height: 1.6;
+	font-size: #{$base + 'px'};
+	font-size: #{$base-font-size + '%'};
+	font-family: $font-body;
+	color: #343434;
+	color: $color-font-body;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+pre, blockquote, dl, figure, table, p, ul, ol, form{
+	@include margin-bottom(0.6);
+}
+
+@media screen and (min-width: 40em) {
+	pre, blockquote, dl, figure, table, p, ul, ol, form{
+		@include margin-bottom(1.2);
+	}
+}
